@@ -25,6 +25,7 @@ module ActioncableChat
 
     config.autoload_paths += %W(
       #{config.root}/app/channels
+      #{config.root}/app/lib
     )
 
   end

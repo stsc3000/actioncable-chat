@@ -6,7 +6,9 @@ class MessagesController < ApplicationController
   end
 
   def create
-    current_user.messages.create(message_params)
+    message = current_user.messages.create(message_params)
+    ActionCable.server.broadcast 'messages', { message: message,
+                                               user: current_user }
     head :ok
   end
 

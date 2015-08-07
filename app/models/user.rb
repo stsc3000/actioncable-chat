@@ -7,4 +7,11 @@ class User < ActiveRecord::Base
                              uid: auth_hash['uid'],
                              name: auth_hash['info']['name']})
   end
+
+  def as_json(options = {})
+    options.reverse_merge!({
+      only: :uid
+    })
+    super(options)
+  end
 end
