@@ -7,7 +7,7 @@ class MessagesController < ApplicationController
 
   def create
     current_user.messages.create(message_params)
-    redirect_to messages_path
+    head :ok
   end
 
   private
