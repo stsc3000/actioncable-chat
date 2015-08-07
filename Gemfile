@@ -26,6 +26,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'omniauth'
 gem 'pry-rails'
 
+gem 'sprockets', '>=3.0.0.beta'
+gem 'sprockets-es6'
+
+gem 'puma'
+gem 'actioncable', github: 'rails/actioncable', ref: '6ee8bb9310f78de85e6b89c8cac33493b0582383'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
