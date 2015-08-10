@@ -18,7 +18,7 @@
 </div>
 
 <div id='message-form-wrapper'>
-  <%= form_for :message, html: { id: 'message-form' } do |f| %>
+  <%= form_for :message, url: '#post-message', html: { id: 'message-form' } do |f| %>
     <%= f.text_area :body, id: 'message-form-body' %>
     <%= f.submit id: 'message-form-submit' %>
   <% end %>
