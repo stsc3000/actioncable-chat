@@ -30,7 +30,7 @@ gem 'sprockets', '>=3.0.0.beta'
 gem 'sprockets-es6'
 
 gem 'puma'
-gem 'actioncable', github: 'rails/actioncable', ref: '6ee8bb9310f78de85e6b89c8cac33493b0582383'
+gem 'actioncable', github: 'rails/actioncable', ref: '6143352f8ffba303f0c7644be7573f6725554cb3'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
