@@ -1,28 +1,16 @@
-== README
+== ActionCable Chat
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application is a short demonstration on how to use ActionCable, a feature of the upcoming Ruby on Rails 5.0.
+It runs a simple multi-user chat which will update automatically once a message is posted.
 
-Things you may want to cover:
+See the accompanying blog post [HERE?].
 
-* Ruby version
+To get started do
 
-* System dependencies
+```
+bundle install
 
-* Configuration
+rails s
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+bin/cable # in another tab/window of your terminal
+```
